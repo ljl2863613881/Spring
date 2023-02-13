@@ -33,8 +33,8 @@ public class FlowDriver {
         job.setOutputValueClass(FlowBean.class);
 
 //6 设置程序的输入输出路径
-        FileInputFormat.setInputPaths(job, new Path("./inputflow"));
-        FileOutputFormat.setOutputPath(job, new Path("./flowoutput"));
+        FileInputFormat.setInputPaths(job, new Path("./D:\\java\\项目\\Spring\\hadoop_maven/inputflow"));
+        FileOutputFormat.setOutputPath(job, new Path("/D:\\java\\项目\\Spring\\hadoop_maven\\flowoutput"));
 
         //根据分区的数量，设定相同数量的ReduceTak数量
         job.setPartitionerClass(FlowPartitioner.class);
