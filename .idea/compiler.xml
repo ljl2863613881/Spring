@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring_ioc" />
+        <module name="hadoop_maven" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hadoop_maven" target="1.8" />
       <module name="java" target="1.5" />
       <module name="spring_ioc" target="1.5" />
     </bytecodeTargetLevel>

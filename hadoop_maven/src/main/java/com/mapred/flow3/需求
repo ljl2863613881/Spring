@@ -1,0 +1,10 @@
+需求：flowcount案例03
+统计规定文档的  总上行流量 ，总下行流量，总流量，并且根据总流量的降序排序
+使用语法：
+1、基本map，reduce
+2、自定义了FlowBean这个序列化得对象
+3、FlowBean实现WriteableComparable
+
+由于是对总流量进行排序
+==>对FlowBean对象的某个属性排序
+==>所以要将FlowBean在  Shuffle[洗牌][只需要在洗牌时调用排序方法] 将 键设置为FlowBean
