@@ -33,7 +33,7 @@ public class FlowDriver {
         job.setOutputValueClass(FlowBean.class);
 
 //6 设置程序的输入输出路径
-        FileInputFormat.setInputPaths(job, new Path("./D:\\java\\项目\\Spring\\hadoop_maven/inputflow"));
+        FileInputFormat.setInputPaths(job, new Path("/D:\\java\\项目\\Spring\\hadoop_maven\\inputflow"));
         FileOutputFormat.setOutputPath(job, new Path("/D:\\java\\项目\\Spring\\hadoop_maven\\flowoutput"));
 
 //7 提交Job
